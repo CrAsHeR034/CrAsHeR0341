@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css" />
+
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        "
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="city-page">
+      <div class="wrapper">
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <div class="city-text-conteiner">
+          <h1 class="city-title">Одеса</h1>
+          <p class="city-descr">
+            Засноване 1415 року, налічує 1 млн. українців. Місто колориту,
+            гумору та іронії. «Мова одеська — плавна і слизька, як прованська
+            олія, з легким букетом помаранчевої шкірки», – Осип Рабінович, один
+            із засновників одеської літературної традиції. Центр міста входить
+            до списку об’єктів спадщини ЮНЕСКО. 2010 року посіло почесне 4 місце
+            в рейтингу найпривабливіших міст Європи. «Привіз» - найстаріший з
+            нині чинних та один із найбільших ринків у Європі.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="city-gallery">
+      <h2 class="city-gallery-tittle">Одеса = українська столиця гумору</h2>
+      <div class="wrapper">
+        <div class="gallery">
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="0"
+          >
+            <img class="gallery-image" src="img/1.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="1"
+          >
+            <img class="gallery-image" src="img/2.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="2"
+          >
+            <img class="gallery-image" src="img/3.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="3"
+          >
+            <img class="gallery-image" src="img/4.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="4"
+          >
+            <img class="gallery-image" src="img/5.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="5"
+          >
+            <img class="gallery-image" src="img/6.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            data-index="6"
+          >
+            <img class="gallery-image" src="img/7.jpg" alt="" />
+          </button>
+          <button
+            class="gallery-button"
+            data-micromodal-trigger="modal"
+            0
+            data-index="7"
+          >
+            <img class="gallery-image" src="img/8.jpg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-title">Cвітлини міста Одеси</h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <main class="modal__content" id="modal-content">
+            <div class="splide" role="group" aria-label="city-gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="img/1.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/2.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/3.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/4.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/5.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/6.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/7.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/8.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
